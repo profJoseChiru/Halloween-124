@@ -1,0 +1,63 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff8000;
+}
+
+h1,h2,.centrar{
+    text-align: center;
+}
+.justificar{
+    text-align: justify;
+}
+/*Encabezado de la pagina*/
+.header{
+    color: white;
+    padding: 30px 15px;
+    margin: 0 auto;
+    border-bottom: 10px solid papayawhip;
+    background-color: black;
+}
+
+/*Barra de navegacion*/
+.navbar{
+    width: 960px;
+    height: 50px;
+    background-color: #111;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    height: 45px;
+    list-style: none;
+}
+li{
+    float: left;
+    display: block;
+    padding: 15px 0;
+}
+a{
+    padding: 0 20px;
+    color: #ddd;
+    border-right:2px solid white ;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*En el contenido de la pagina*/
+.contenedor{
+    padding: 0;
+    margin: 50px auto 0;
+    width: 960px;
+}
+.contenido{
+    margin: 0;
+    padding: 10px;
+    float: left;
+    width: 936px;
+    background-color: #fff;
+    border:3px solid black;
+}
