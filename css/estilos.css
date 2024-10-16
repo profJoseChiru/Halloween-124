@@ -1,63 +1,108 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     background-color: #ff8000;
 }
 
-h1,h2,.centrar{
-    text-align: center;
-}
-.justificar{
-    text-align: justify;
-}
-/*Encabezado de la pagina*/
-.header{
+/* Header */
+.header {
     color: white;
     padding: 30px 15px;
     margin: 0 auto;
-    border-bottom: 10px solid papayawhip;
-    background-color: black;
+    border-bottom: 10px solid #E66000;
+    background-color: #2e2e2e;
 }
 
-/*Barra de navegacion*/
-.navbar{
-    width: 960px;
-    height: 50px;
+/* Barra de navegación */
+.navbar {
+    width: 97%; /* Cambiado a 100% para que sea fluido */
+    max-width: 960px; /* Máximo ancho */
     background-color: #111;
+    margin: 0 auto; /* Centrar la barra de navegación */
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0 15px; /* Padding para darle espacio interno */
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
-    height: 45px;
     list-style: none;
+    display: flex; /* Usar flexbox para alinear los elementos */
 }
-li{
-    float: left;
-    display: block;
-    padding: 15px 0;
+
+li {
+    padding: 15px 10px; /* Espaciado interno para los enlaces */
 }
-a{
-    padding: 0 20px;
-    color: #ddd;
-    border-right:2px solid white ;
-    font-size: 18px;
-    font-weight: bold;
+
+a {
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 10px 15px; /* Ajustar el padding */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
 }
 
-/*En el contenido de la pagina*/
-.contenedor{
+/* Efecto al pasar el ratón */
+a:hover {
+    background-color: #E66000; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Esto trabaja el contenido de la página */
+.contenedor {
     padding: 0;
     margin: 50px auto 0;
-    width: 960px;
+    width: 100%; /* Cambiado a 100% para que sea fluido */
+    max-width: 960px; /* Máximo ancho */
 }
-.contenido{
+
+.contenido {
     margin: 0;
     padding: 10px;
-    float: left;
-    width: 936px;
     background-color: #fff;
-    border:3px solid black;
+    border: 1px solid #111;
+}
+
+/* Justificar contenido */
+.centrar {
+    text-align: center;
+}
+
+.justificar {
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background-color: #2e2e2e; 
+    color: white;
+    text-align: center; 
+    padding: 20px 0;
+    width: 100%; 
+    margin: 0; 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: stretch; /* Estirar elementos a todo el ancho */
+    }
+
+    ul {
+        flex-direction: column; /* Colocar los enlaces uno debajo del otro */
+        width: 100%; /* Asegurar que ocupa todo el ancho */
+    }
+
+    li {
+        text-align: center; /* Centrar texto en móviles */
+        width: 100%; /* Cada elemento ocupa todo el ancho */
+    }
+
+    a {
+        border-right: none; /* Quitar el borde en móviles */
+    }
 }
